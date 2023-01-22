@@ -297,7 +297,7 @@ def upload_media_news(post_path):
                 "digest": digest,
                 "show_cover_pic": 1,
                 "content": RESULT,
-                # "content_source_url": CONTENT_SOURCE_URL
+                "content_source_url": CONTENT_SOURCE_URL
             }
             # 若新增的是多图文素材，则此处应有几段articles结构，最多8段
         ]
