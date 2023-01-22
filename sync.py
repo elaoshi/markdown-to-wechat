@@ -24,6 +24,9 @@ import json
 import urllib.request
 import random
 import string
+from dotenv import load_dotenv
+
+load_dotenv()
 
 CACHE = {}
 
@@ -294,10 +297,10 @@ def upload_media_news(post_path):
                 "title": TITLE,
                 "thumb_media_id": THUMB_MEDIA_ID,
                 "author": AUTHOR,
-                "digest": digest,
-                "show_cover_pic": 1,
+                # "digest": digest,
+                # "show_cover_pic": 1,
                 "content": RESULT,
-                "content_source_url": CONTENT_SOURCE_URL
+                # "content_source_url": CONTENT_SOURCE_URL
             }
             # 若新增的是多图文素材，则此处应有几段articles结构，最多8段
         ]
