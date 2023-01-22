@@ -281,11 +281,11 @@ def upload_media_news(post_path):
     content = update_images_urls(content, uploaded_images)
 
     THUMB_MEDIA_ID = (len(images) > 0 and uploaded_images[images[0]][0]) or ''
-    AUTHOR = 'yukang'
+    AUTHOR = 'GreatAdx'
     RESULT = render_markdown(content)
     link = os.path.basename(post_path).replace('.md', '')
     digest = fetch_attr(content, 'subtitle').strip().strip('"').strip('\'')
-    CONTENT_SOURCE_URL = 'https://catcoding.me/p/{}'.format(link)
+    CONTENT_SOURCE_URL = 'https://www.iamericliu.com/{}'.format(link)
 
     articles = {
         'articles':
@@ -297,7 +297,7 @@ def upload_media_news(post_path):
                 "digest": digest,
                 "show_cover_pic": 1,
                 "content": RESULT,
-                "content_source_url": CONTENT_SOURCE_URL
+                # "content_source_url": CONTENT_SOURCE_URL
             }
             # 若新增的是多图文素材，则此处应有几段articles结构，最多8段
         ]

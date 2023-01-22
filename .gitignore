@@ -1,5 +1,5 @@
 *.html
-blog-source
+blog-source/*.md
 code2img
 cache.txt
 *.log
